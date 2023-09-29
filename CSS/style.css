@@ -1,0 +1,227 @@
+/* Сброс стилей и подключние рут */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --color-header: #fafafa;
+    --color-text: #fafafa;
+}
+
+
+/* Первый экран */
+
+/* .menu {
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 12%;
+} */
+
+body {
+    background-image: url(/files/background.png);
+    color: #fafafa; 
+    overflow-x: hidden;
+}
+
+.face {
+    width: calc(var(--index) *24 );
+    position: absolute;
+    left: 60vw;
+    top: 15vh;
+}
+
+.container {
+    padding: 0 10vh;
+    margin-bottom: 6%;
+}
+
+.main-title {
+    font-size: calc(var(--index) * 3);
+    position: relative;
+    width: 70vw;
+    top: 10vh;
+    margin-bottom: 3%;
+}
+
+
+.container > p {
+    font-size: calc(var(--index) * 1);
+    position: relative;
+    width: 52vw;
+    top: 10vh;
+    line-height: 140%;
+    font-weight: 300;
+    margin-bottom: 2%;
+    
+}
+
+button {
+    font-size: calc(var(--index) * 1);
+    position: relative;
+    color: #fafafa;
+    width: 15vw;
+    height: 6vh;
+    top: 10vh;
+    line-height: 140%;
+    font-weight: 300;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    font-weight: normal;
+    border-style: none;
+}
+
+.vk {
+    background-color: #0077FF;
+}
+
+.wa {
+    background-color: #01CD00;
+}
+
+.tg {
+    background-color: #28A8EA;
+}
+
+/* Второй экран */
+
+.skil-title {
+    font-size: calc(var(--index) * 3);
+    padding-top: 5%;
+}
+
+.gallery {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50% 50%;
+}
+
+.gallary > * {
+    flex: 1;
+}
+
+.gallary-left {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.gallary-left > p {
+    font-size: calc(var(--index) * 2);
+}
+
+.gallary-left > svg {
+    margin-left: 2%;
+}
+
+.star > svg {
+    margin-left: 2%;
+}
+
+/* Третий экран */
+
+.portfolio {
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 45% 30% 25%;
+}
+
+.project {
+    margin-left: 8%;
+}
+
+.name-project > p {
+    margin-bottom: 30%;
+}
+
+.name-project-too > p {
+    margin-bottom: 8%;
+}
+
+.link-project > p {
+    margin-bottom: -18%;
+}
+
+.description-title {
+    font-size: calc(var(--index) * 1.5);
+    margin-top: 8%;
+}
+
+.vklad {
+    font-size: calc(var(--index) * 1);
+    margin-top: 45%;
+    font-weight: 200;
+    max-width: 50vw;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.normal {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.skrin {
+    width: calc(var(--index) *24 );
+}
+
+.color-bt {
+    background-color: #0C0C0C;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+}
+
+.content > svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.not-activ-bt {
+    color: #0C0C0C;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+    border: 2px solid #0C0C0C;
+}
+
+.bh {
+    width: calc(var(--index) *24 );
+    height: calc(var(--index) *5 );
+    color: #fafafa;
+    background-color: #0C0C0C;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+    display: block;
+    margin: auto;
+    margin-bottom: 15%;
+
+}
+
+footer {
+    display: block;
+    background-color: #202020;
+    height: 10vh;
+}
+
+.prava {
+    padding-top: 2%;
+    text-align: center;
+}
